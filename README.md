@@ -100,7 +100,17 @@ select table- INSERT- SLICER - select the columns
 # commnet
 To add commnent, right click on the cell and insert comment
 
+# CHARTS
+Insert - recommended charts
+In corner we will get + smymols and 2 more symbols
+chart style,elements, filter
+click on that + and click on AXIS titles to name the axis
+data lables- to show data over the rectange of graph
 
+Now that brush (chart style below + symbol)
+
+Now below that in style we can choose filters
+1. column chart - normal basic rectanfle figures
 
 
 
