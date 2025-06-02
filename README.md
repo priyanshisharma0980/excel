@@ -49,7 +49,7 @@ go to HOME, conditional formatting, colour scales
 
 # Filter
 select the table then data - filter (to get drop down for filters)
-# To sort 2 rows together 
+
 
 # Duplicate
 select table
@@ -81,16 +81,24 @@ create a table of these elements of dropdown
 Now go to the table where you want to use this dropdown and go to
 DATA - DATA validation - LIST
 
+
+
 # SORT
-select the thable and add Filter, then go to sort
+# To sort 2 rows together 
+select the table and add Filter, then go to sort
 enter columns
 Greater than, less than - select the filter for that column
 Then open number filter
 input the values
 
+# SLICER 
+(for example you have gender column, slicer can be moved and it will have two buttons - M and F) 
+select the rows and make it a TABLe
+table desgin will open in ribbon only after you make a table
+select table- INSERT- SLICER - select the columns
 
-
-
+# commnet
+To add commnent, right click on the cell and insert comment
 
 
 
