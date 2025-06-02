@@ -23,6 +23,56 @@ Select FORMAT PAINTER by double clicking also
 
 Another way - Select all the cells and right click FORMAT CELLS
 
-#To create rows above certain rows
+# To create rows above certain rows
 Right Click on 1 or A then select INSERT
+
+Add rows ctrl + y
+delete rows ctrl and -
+
+# SUM
+write =sum
+then press TAB then select the cells
+
+# Average
+=average
+
+# CONCAT
+to add 2 names eg first_name + last_name = full name
+In column full_name write-
+=concat(e1, " ", f1)
+," ", - this is used to give space
+
+
+# Colour coding
+give colour to rows (grren to red wala format)
+go to HOME, conditional formatting, colour scales
+
+# Filter
+select the table then data - filter (to get drop down for filters)
+# To sort 2 rows together 
+
+# Duplicate
+select table
+then Data - remove duplicates
+To highlight duplicates
+Home - conditional formatting - Highlight cell rules - duplicate values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
