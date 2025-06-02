@@ -58,7 +58,35 @@ To highlight duplicates
 Home - conditional formatting - Highlight cell rules - duplicate values
 
 
+# round
+=rounf(c11, 2) - it will round off to two places.
+roundup() and rounddown()  
 
+# wrap text
+HOMW - Wrap text
+wrap text is used to contain the whole long line in one cell
+
+# hyperlink
+select column
+insert - link (ctrl+k)
+
+# hyperlink another workbook
+insert- link - place in this document
+
+# remove hyperlink
+right click the cell to edit or remove hyperlink
+
+# drop down
+create a table of these elements of dropdown
+Now go to the table where you want to use this dropdown and go to
+DATA - DATA validation - LIST
+
+# SORT
+select the thable and add Filter, then go to sort
+enter columns
+Greater than, less than - select the filter for that column
+Then open number filter
+input the values
 
 
 
