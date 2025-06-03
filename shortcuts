@@ -1,4 +1,5 @@
 # alt + h + w - to wrap text of whole table
 # To select multiple non-adjacent (non-consecutive) columns in Excel:
-
+# =vlookup(lookup value, table array, column_index_number, [range_lookup])
+=vlookup(name row, will select the whole refrence table, 5,0)
 
