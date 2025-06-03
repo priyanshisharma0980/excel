@@ -113,11 +113,28 @@ Now below that in style we can choose filters
 1. column chart - normal basic rectanfle figures
 
 
+# text to column, text split
+DATA - text to columns
+eg- abcd@gmail.com
+we need to split in two columns -abcd and gmail.com (things after @)
+go to TEXT TO COLUMNS - then delimited
+select others and type @ the next
+
+# split full name into first and last name
+split via a space in DATA - text to column
+
+# Vlookup
+=vlookup(lookup value, table array, column_index_number, [range_lookup])
+=vlookup(name row, will select the whole refrence table, 5,0)
+to lock the table - fn+f4 (2nd entry in the formula (table array)
+in above example used 5 because - 5 is the position of colum salary (E) E is 5
+0 is for exact match  
+
+LIMITATION- Vlookup will ignore the duplicate values and only return of rows of the 1st value, and will ignore later duplicates
 
 
-
-
-
+# Pivot table
+to amalyse and calculate data
 
 
 
