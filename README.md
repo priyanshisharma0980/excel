@@ -132,6 +132,32 @@ in above example used 5 because - 5 is the position of colum salary (E) E is 5
 
 LIMITATION- Vlookup will ignore the duplicate values and only return of rows of the 1st value, and will ignore later duplicates
 
+# pivot table
+to analyse and check trend and patterns of data
+
+INESRT - Pivot table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Pivot table
 to amalyse and calculate data
