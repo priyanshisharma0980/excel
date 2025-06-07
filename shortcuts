@@ -3,3 +3,5 @@
 # =vlookup(lookup value, table array, column_index_number, [range_lookup])
 =vlookup(name row, will select the whole refrence table, 5,0)
 
+# to select whole table
+on first cell do - ctr + shift + right arrow + down arrow 
