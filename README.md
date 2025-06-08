@@ -14,7 +14,7 @@ Drag this date down for this format
 Step 1: Convert Text Dates to Real Dates
 Select the cells with dates like 23-07-2000, 21-09-2024, etc.
 Go to the Data tab → Click Text to Columns.
-Choose Delimited → Click Next → Click Next again.
+Choose Delimited → Unselect all the options- Click Next → Click Next again.
 In Step 3, select Date and choose DMY (since your dates are in Day-Month-Year format).
 Click Finish.
 
