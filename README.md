@@ -137,6 +137,31 @@ to analyse and check trend and patterns of data
 
 INESRT - Pivot table
 
+# xlookup (it has 6 arguments)
+Here we are using xlookup, to look for name value in table with column Name and then search for respective email address
+eg- we have certain names and we need to find their emails, now we have another complete table having all superset names and emails of many
+=xlookup(select the name, go to big table and select the entire name row to look for this particular name in that column, select the email column) 
+
+vlookup for exact match 
+eg- alex and alexandria
+=xlookup(select the name, go to big table and select the entire name row to look for this particular name in that column, select the email column, "NOT found") 
+=XLOOKUP(L3,K2:K10,J2:J10, "Incorrect name")
+if name not found it will show - Incorrect name
+
+
+eg- need to find email ID for Beasley (we do not know the name , Beasley is the surname)
+=XLOOKUP("*"&L5,K2:K10,J2:J10,"Not found",2) 
+*"&L5	- This creates a wildcard search. If L5 contains apple, this becomes *apple, meaning “find anything that ends with ‘apple’” or contains ‘apple’ anywhere.
+K2:K10	- This is the column Excel will search in to find the match.
+J2:J10	- This is the column from which the result will be returned, once a match is found in K2:K10.
+"Not found" -	If no match is found, Excel will return this message instead of showing an error.
+2	- This tells Excel to do a wildcard match (where * and ? can be used to find partial matches).
+
+another example- =XLOOKUP(L6&"*",K2:K10,J2:J10,"Not found",2) - we do not know the surname, only name we know
+
+1 and -1 ONLY WORK WITH SORTED DATA
+xlookup search order last parameter (0,1,-1,2)       -- used in dates 
+1 = Exact match or next smaller item
 
 
 
@@ -147,20 +172,6 @@ INESRT - Pivot table
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Pivot table
-to amalyse and calculate data
 
 
 
