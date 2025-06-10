@@ -1,3 +1,10 @@
+# formulas work onlt with GENERAl cell type (if instead of formula output, only formula is written)
+Select the cell where you entered the formula.
+Go to the Home tab.
+In the Number Format dropdown (in the ribbon), change from Text to General.
+Now double-click the cell or press F2, then press Enter again.
+
+
 # alt + h + w - to wrap text of whole table
 # To select multiple non-adjacent (non-consecutive) columns in Excel:
 # =vlookup(lookup value, table array, column_index_number, [range_lookup])
@@ -5,3 +12,112 @@
 
 # to select whole table
 on first cell do - ctr + shift + right arrow + down arrow 
+
+# max()
+max value of the range so write =max(value 1, last value) OR =max(range of column)
+
+# min()
+will give the minimum value
+
+# IF and IFs
+=if(logical statement, if true, if false)
+eg- =if(select the range > 30, "old", "young")
+IFs
+=IFS(logical test, value_if_true_1, logical test2, value_if_true_2)
+=IFS(F2:F10="Salesman", "sales", F2:F10="HR", "No work",F2:F10="Accountant","Money")
+
+# left and right
+left(select the column, select the number(eg-1,2,3..))
+so from the string from the left side it will return 3 letters.
+eg- ayush so left(column select, 3) - output will be- ayu
+
+# right/left IMP
+This function only works on text type of format, not date type
+so to convert a date to text use-
+text(select the column, "dd/mm/yyyy")
+
+# day
+to extract day only from this - "dd/mm/yyyy")
+used =day(select the column)
+
+# trim
+where there is extra space in the data it removed all and formats the data
+=trim)select the column)
+
+# substitute
+replaces existing text with new text
+=substitute(select column, old_text, new_text, instance_num)  -- instance_num is optional
+eg- there are dates in various formats like 08-02-2009 and 07/02/2002
+now we need in 1 format that is dd-mm-yyyy
+=substitute(select the column, "/","-") without any instance result 07-02-2002
+=substitute(select the column, "/","-", 1) with 1 instance result 07-02/2002
+=substitute(select the column, "/","-",2) with 2 instance 2nd side will be affected result 07/02-2002
+
+
+# SUMIF and SUMIFS
+=sumif(range,">5000") 
+
+=sumifs(range, criteria 1 range, criteria 1, criteria 2 range, criteria 2)
+
+=sumfifs(salalry, gender, "FEMALE", age, ">30")
+
+# count, countif
+same as sum but returns count output
+
+# days
+gives how many dates are between start and end date
+=days(end date, start date)
+
+-- day and days is different
+day gives the day from a date eg- 23/12/2000
+=day(range) will give out 23
+
+= days will return how many dates are between start and end date
+
+# networkdays
+it gives number of working days excluding the saturday and sunday, we can also specify the holidays
+=networkdays(start date, end date, [holidays])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
