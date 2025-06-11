@@ -23,6 +23,17 @@ Select FORMAT PAINTER by double clicking also
 
 Another way - Select all the cells and right click FORMAT CELLS
 
+DATE FORMAT
+-- How to use web excel to aling multiple type of data formats in one that is this format- Sunday, October 3, 1999
+Highlight the column or cells that contain your mixed-format dates (e.g., 1/5/2000, 7/4/2000, etc.).
+Go to the "Home" Tab
+In Excel for the Web, look at the top menu. Click "Home" if you’re not already there.
+Open the Format Options
+Click the small dropdown next to the “Number” format box (it might say “General” or “Short Date”).
+Choose "More Number Formats..." at the bottom.
+
+
+
 # To create rows above certain rows
 Right Click on 1 or A then select INSERT
 
@@ -162,6 +173,20 @@ another example- =XLOOKUP(L6&"*",K2:K10,J2:J10,"Not found",2) - we do not know t
 1 and -1 ONLY WORK WITH SORTED DATA
 xlookup search order last parameter (0,1,-1,2)       -- used in dates 
 1 = Exact match or next smaller item
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
