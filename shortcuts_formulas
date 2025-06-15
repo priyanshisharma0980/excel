@@ -79,7 +79,12 @@ it gives number of working days excluding the saturday and sunday, we can also s
 =networkdays(start date, end date, [holidays])
 
 
-
+# how to create a column heading that is visible even after scrolling down in excel 
+Open your Excel file.
+Make sure your column headings are in the first row (Row 1).
+Click on the View tab in the ribbon at the top.
+Click Freeze Panes (usually near the middle).
+From the dropdown menu, select Freeze Top Row.
 
 
 
