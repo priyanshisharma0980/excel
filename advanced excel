@@ -36,7 +36,7 @@ another example- =XLOOKUP(L6&"*",K2:K10,J2:J10,"Not found",2) - we do not know t
 0 - is for exact matches
 
 
-# vlookup
+# vlookup   (Vertical lookup)
 =vlookup (lookup value, select the table, select the number of column (1,2,3,4...)(for eg email is 4th column, TRUE/FALSE)
 = 
 
@@ -66,9 +66,7 @@ go to conditional formattimg - duplicate values
 now a dialoug box will appear, select the drop down and select unique values
 
 
-
-
-
+# Hlookup  (Horizontal lookup)
 
 
 
