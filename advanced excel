@@ -48,6 +48,37 @@ Column A contains names,
 Column D (which is the 4th column in range A:G) contains email,
 =VLOOKUP(I2,A2:G18,4,FALSE)
 
+# Xllopkup VS Vlookup
+VLOOKUP 
+Lookup Direction	Searches only vertically from top to bottom	
+Column Index	Needs a column number to specify return col
+Returns #N/A on no match
+XLOOKUP
+Can search both vertically and horizontally
+Returns result based on a range for return values (no column number needed)
+Can specify a custom value if not found
+
+# Conditional formatting
+HOME - Conditional formatting
+to highlight duplicates, use colour scales, make rules
+-- Now if we want to highlight non duplicate values
+go to conditional formattimg - duplicate values 
+now a dialoug box will appear, select the drop down and select unique values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
