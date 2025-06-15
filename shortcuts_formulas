@@ -87,9 +87,10 @@ Click Freeze Panes (usually near the middle).
 From the dropdown menu, select Freeze Top Row.
 
 
-
-
-
+# Convert Rows into columns
+copy table
+go to HOME - PASTE options - Transpose
+It will transpose the data, convert rows into columns
 
 
 
