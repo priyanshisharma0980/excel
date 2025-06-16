@@ -4,6 +4,11 @@ Go to the Home tab.
 In the Number Format dropdown (in the ribbon), change from Text to General.
 Now double-click the cell or press F2, then press Enter again.
 
+# alt + H + I + S
+To number rows from 1 -1000
+select column
+enter 1000
+enter
 
 # alt + h + w - to wrap text of whole table
 # To select multiple non-adjacent (non-consecutive) columns in Excel:
