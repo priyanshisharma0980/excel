@@ -42,7 +42,7 @@ used =day(select the column)
 
 # trim
 where there is extra space in the data it removed all and formats the data
-=trim)select the column)
+=trim(select the column)
 
 # substitute
 replaces existing text with new text
@@ -93,8 +93,10 @@ go to HOME - PASTE options - Transpose
 It will transpose the data, convert rows into columns
 
 
-
-
+# Upper(), lower(), proper()
+converts a name in upper case - HELLO All
+converts in 1st letter capital basis - Hello All
+ 
 
 
 
