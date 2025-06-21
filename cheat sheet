@@ -1,0 +1,12 @@
+# Gauge graph -
+made with pie charts
+it shows the output as a meter, as we chaange the values it acts as an arrow and works as a meter
+
+# once we trim() data
+then we need to remove the column that was nad and keep the trimmed column
+so ctrl + c the trimmed column, go to PASTE, then PASTE as VALUE
+ctrl - c to deletes the column
+
+# add country details if I have city details
+select the city details
+go to DATA
