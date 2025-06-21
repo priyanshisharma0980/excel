@@ -10,6 +10,11 @@ select column
 enter 1000
 enter
 
+
+# apply to all below rows
+shift + down arrow
+ctrl + D
+
 # alt + h + w - to wrap text of whole table
 # To select multiple non-adjacent (non-consecutive) columns in Excel:
 # =vlookup(lookup value, table array, column_index_number, [range_lookup])
@@ -97,14 +102,22 @@ copy table
 go to HOME - PASTE options - Transpose
 It will transpose the data, convert rows into columns
 
-
 # Upper(), lower(), proper()
-converts a name in upper case - HELLO All
-converts in 1st letter capital basis - Hello All
+converts a name in upper case - HELLO ALL
+Proprr() - converts in 1st letter capital basis - Hello All
  
+# To fill the empty cells with NA
+select the whole table
+HONE - FIND and SELECT - GO TO SPECIAL
+now the blank cells are highlighted
+Select BLANKS click OKAY
+now go to formula bar
+Just type NA
+press ctrl + enter
 
-
-
+# iferror
+if there is no error in calculation it will return value, else will return desired output
+iferror(L3/H3, "NA")
 
 
 
