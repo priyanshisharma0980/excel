@@ -1,1 +1,21 @@
 Macros
+Data VAlidation
+
+
+# statistics
+MEAN - 1+4+23+143/5
+sum of all values / total numberof values
+MODE - number that is repeated the most number of times
+MEDIAN - middle value
+if even digits - 10, 20, 30, 40
+median is 20+30/2 =25
+
+VARIANCE - how far data values are dispersed from MEAN
+STANDARD VARIATION - used to calculate amount of dispersion
+SD CALCULATION-
+Step 1: Find the mean.
+Step 2: Subtract the mean from each score.
+Step 3: Square each deviation.
+Step 4: Add the squared deviations.
+Step 5: Divide the sum by the number of scores. Average of squared value - VARIANCE
+Step 6: Take the square root of the result from Step 5.  - this is SD
