@@ -1,4 +1,18 @@
-Macros
+# Macros
+Used to create a switch like thing, when we need to carry multiple options at once.
+It is like a button
+like one whole row we need to bold, itlaic and underline
+we select all the row and then go to VIEW - MACROS
+STart - Record MAcros, then the macro will start recording 
+So record the whole step, Like select the row and apply all the features like bold, italices and underline
+Now got to MACROS and Stop recording Macro
+
+To runn macro - VIEW - MACROS - RUN MACROS
+Or we can go and run it from quick access toolbar
+quick access toolbar  - it is a small arrow over the ribbon.
+select it  - MORE commands - Quick access toolbar - Macros - Add _ modify - OK
+
+
 Data VAlidation
 
 
