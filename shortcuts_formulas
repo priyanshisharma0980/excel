@@ -1,3 +1,5 @@
+# selecrt ALT for keyboard navigation
+
 # formulas work onlt with GENERAl cell type (if instead of formula output, only formula is written)
 Select the cell where you entered the formula.
 Go to the Home tab.
@@ -120,12 +122,32 @@ if there is no error in calculation it will return value, else will return desir
 iferror(L3/H3, "NA")
 
 
+# extract name from email-
+john.doe@example.com to John DOe
+=PROPER(SUBSTITUTE(LEFT(A2,FIND("@",A2)-1),"."," "))
+
+1. FIND("@", A2)
+What it does: Finds the position of @ in the email.
+For john.doe@example.com, it returns 9, because @ is the 9th character.
+ 2. FIND("@", A2) - 1
+We subtract 1 to stop just before the @.
+So instead of extracting john.doe@, we get just john.doe.
+3. LEFT(A2, FIND("@",A2)-1)
+LEFT(text, number of characters) gets characters from the start.
+This gives:
+LEFT("john.doe@example.com", 8) → john.doe
+4. SUBSTITUTE(..., ".", " ")
+What it does: Replaces all dots . with spaces.
+So: john.doe becomes john doe.
 
 
+# paste formula as a text
+Add an apostrophe ' before the formula
+'=LEFT(J4,FIND("@",J4)-1)
 
-
-
-
+# how to paste 1,2,3 til 1000 rows? except for dragging + sign or double clicking + sign??
+HOME - FILL - SERIES
+give range 1 to 1000
 
 
 
