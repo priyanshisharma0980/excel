@@ -1,3 +1,4 @@
+-- VBA - Virtual Basic for Application
 # Macros
 ABSOLUTE FORMATTING (for one row)
 Used to create a switch like thing, when we need to carry multiple options at once.
@@ -29,6 +30,8 @@ VIWE - VIEW MACROS - EDIT
 # RUN MACRO IN ANY FILE
 DEVELOPER - MACROS - RUN MACROS - NAME THE MACRO - SELECT THE SHORTCUT KEYS - SELECT PRESONAL MACRO WORKBOOK
 
+# Need to create a button  
+
 
 Data VAlidation
 
@@ -50,3 +53,29 @@ Step 3: Square each deviation.
 Step 4: Add the squared deviations.
 Step 5: Divide the sum by the number of scores. Average of squared value - VARIANCE
 Step 6: Take the square root of the result from Step 5.  - this is SD
+
+
+# ADD - INS
+HOME - ADD INs - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
