@@ -59,13 +59,45 @@ Step 6: Take the square root of the result from Step 5.  - this is SD
 HOME - ADD INs - 
 
 
+# POWER QUERY
+open BLANK excel file - DATA - GET DATA - FROM FILE - FROM FOLDER
+Select the folder - combine - combine and transforn the data
 
+A NEW TAB WILL OPEN 
 
+If we can only name in that new tab row-
+We will then go to TRANSFORM TAB - EXTRACT - Text before delimiter
 
+To get number of days between 2 dats
+select column 1 then CTRL then column 2
+this way you will select both the columns together
+go to ADD COLUMN
+DATE - Subtract days
 
+To multiply two columns
+select both the columns
+go to ADD COLUMNS - Standard - Multiply
 
+To convert one name into 2 differnt parts
+TRANSFORM - SPLIT COLUMN - enter the delimiter
 
+To load this into an excel file-
+HOME - CLOSE and load
 
+To analyse it  further -
+Go to INSERT - PIVOT TABLE
+
+QUESTIONS
+-- I have a folder conataing 5 files, but I only want to upload 3 out of them in excel DATA- GET DATA, how to I do it?
+Combine and load the whole folder then
+Use the filter dropdown on the Name column to:
+Select only the 3 files you want.
+
+-- I am trying to subtract 2 dats but not getting an otion after clicking on Dates for Substract days
+Method 1: Using a Custom Column
+Go to Add Column → Custom Column.
+2️In the formula box, write:
+=[DateColumn1] - [DateColumn2]
 
 
 
