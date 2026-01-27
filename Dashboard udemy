@@ -1,0 +1,132 @@
+Want to convert the column of name in camel casing (first letter both name and surname capital)
+Create a new column - write =proper(selct the name)
+drag down to follow on the whole column
+
+Turn column ID to upper case
+Create a new column - write  =upper(C2)
+
+Now if we try to delete the main column  from where it is taking refrence, then it will throw error
+we need to take data from formatted column and paste the VALUES (home - paste - drop down - values)
+Paste the formatted value to the original column
+Delete the duplicate column with formula now
+
+
+Now INDEX
+we use choose function
+we enter a number first eg -1   (it starts with 1)
+value1 = jan
+value2 = Feb
+value3 = march
+
+If we enter 3 it will give march
+
+for this type =choose(
+Now in formula bar you will see - fx go to that to format the formula
+index num = select the cell
+
+
+from a date 08/11/1999
+we want to filter using month name
+1 way is we can use =TEXT()
+go to formula bar for fx
+enter the column
+in value enter mmm for month
+=TEXT(C2, "mmm")  it will give Aug
+=MONTH(C2) it will give 08 (the month number)
+
+
+OR we can extract the month and and use =choose()
+to extract also we need =TEXT(date, "mmm") OR =MONTH(C2)
+(TIP - If you want to add 000 before any number you cannot type it directly as 0 before the numbers will be ignored)
+do this text(1234,"0000") result = 00001234
+
+If we want to do a good formatting - we need to convert into table
+HOME - Format as table
+Give table name
+
+
+DASHBOARD
+
+Create a drop down 
+DATA - Data validation - Settings - List - Source (you select name of companies) so we can create a drop down for each company)
+Now drop down is created
+
+Now according to the selected option in drop down I want to show the city address state details for each company
+for this we will use vlookup
+select that cell
+=vlookup() go to formula bar then fx
+=vlookup(company, table, column number of what you want to return)
+=VLOOKUP(B5,CustomerInfo,3, FALSE)
+
+NESTED FUNCTION
+In some city there is no value showing up
+so it shows 0
+but I want to return - NO VALUE FOUND
+along with the vlookup
+so we use nested function
+
+NESTED FUNCTIONS MAJORLY USE =IF(confdition, true, false)
+=IF(VLOOKUP(B5,CustomerInfo,7, FALSE)=0,"NO DATA FOUND",VLOOKUP(B5,CustomerInfo,7, FALSE))
+
+
+
+NOW WE WANT ORDER HISTORY for each company
+there can be multiple rows of order history for each company
+Copy the whole order history table and paste in in dashboard (tuen OFF the filter - Table design - Filter button off)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
