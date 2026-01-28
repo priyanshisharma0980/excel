@@ -51,6 +51,8 @@ Create a drop down
 DATA - Data validation - Settings - List - Source (you select name of companies) so we can create a drop down for each company)
 Now drop down is created
 
+If we want to clear the selection of drop down - DATA - in filter box click clear
+
 Now according to the selected option in drop down I want to show the city address state details for each company
 for this we will use vlookup
 select that cell
@@ -73,6 +75,83 @@ NESTED FUNCTIONS MAJORLY USE =IF(confdition, true, false)
 NOW WE WANT ORDER HISTORY for each company
 there can be multiple rows of order history for each company
 Copy the whole order history table and paste in in dashboard (tuen OFF the filter - Table design - Filter button off)
+
+
+DATA - filter - advanced filter + VBA(Visual Basic for Applications (VBA)
+
+ADVANCED filter cannot read data from drop down (we need to remove table as advanced filter do not aplly on table - Go to Table Design- Click Convert to Range)
+we need to make a hidden button (tiny helper)
+Link it to your dropdown
+L4 we write - Company Name
+L5 we write - =b5 (so b5 ka data aa jaye yaha)
+(Advanced Filter cannot read directly from a dropdown.
+It ONLY reads from a criteria range (header + value).
+
+So we:
+Create a tiny helper (can be hidden)
+Link it to your dropdown
+VBA re-runs Advanced Filter when dropdown changes
+
+
+List range - select the table you added below order history
+Criteria - The L4 and L5
+
+It will start filtering one by one
+
+
+now record the MACRO
+View - Macros - start - record - stop
+Now alt + 11 a new VBA tab will open
+Under module copy this -
+Range("B19:J849").AdvancedFilter Action:=xlFilterInPlace, CriteriaRange:= _
+        Range("L5:L6"), Unique:=False
+Now in VBA Tab selec the worksheet (dashboard)
+In the heading there is a dop down where you need to select -
+worksheet
+and other drop down select change (meaning if any change happen the data changes )
+
+paste this 
+Private Sub Worksheet_Change(ByVal Target As Range)
+Range("B19:J849").AdvancedFilter Action:=xlFilterInPlace, CriteriaRange:= _
+        Range("L5:L6"), Unique:=False
+End Sub
+
+But this has a draw back becuase in the worksheet if we make any change the data will change
+so we need only the drop doen limited data to change
+
+Private Sub Worksheet_Change(ByVal Target As Range)
+If Target.Address = "$B$5" Then
+    Range("B19:J849").AdvancedFilter Action:=xlFilterInPlace, CriteriaRange:= _
+        Range("L5:L6"), Unique:=False
+End If
+        
+End Sub
+
+
+Now total order for this filtered out data accoriding to each drop down
+we can use =SUM to filter to count number of orders but if we hide some orders, it will still show
+so we use =SUBTOTAL()
+Order count - =subtotal(function, column which you want output of)
+In subtotal - function has values 1-11 and 101-111(1-11 for including hidden value 101-111 for not including hidden value) 
+
+so write =subtotal( then fx)
+=SUBTOTAL(101,H20:H849)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
