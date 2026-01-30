@@ -135,7 +135,104 @@ Order count - =subtotal(function, column which you want output of)
 In subtotal - function has values 1-11 and 101-111(1-11 for including hidden value 101-111 for not including hidden value) 
 
 so write =subtotal( then fx)
-=SUBTOTAL(101,H20:H849)
+=SUBTOTAL(101,H20:H849
+
+to save macro enabled excel use extension - xlsm
+
+Now add visualization using PIVOT TABLE
+
+INSERT - PIVOT table
+Pivot table Analyze- Pivot charts - select the charts - 
+DESIGN - move charts
+
+we want to linnk the pivot chart to the dropdown
+Alt + f11
+Insert - module - a new module will be created
+
+Now in new module created insert - procedure - sub - public
+In order to communicate with pivot table
+ to create variable we start with variable Dim
+Dim x AS PivotTable
+
+Public Sub pivotdata()
+
+    Dim pt As PivotTable
+    Dim field As PivotField    ' store filter field in pivot table
+    Dim newCustomer As String  ' store selected customer name
+    
+    
+    ' now refrencing
+    
+    Set pt = Worksheets("pivot sheet").PivotTables("PivotTable3")
+    Set field = pt.PivotFields("Company Name")
+    newCustomer = Worksheets("Dashboard").Range("B5").Value
+    
+    ' apply filter
+    
+    With pt
+        field.ClearAllFilters
+        field.CurrentPage = newCustomer
+        .RefreshTable
+    End With
+    
+End Sub
+
+
+
+Now we want to add slicer -
+
+click on pivot chart (chart click karna warna slicer kisi aur ka add hoga)
+analyse - insert slicer
+
+Now if we want to hide - right click on the columns A B C D... and hide
+If you do not want to hide the chart along with the data right click on chart -
+format chart data - that sqare symbol - properties - don't move or size with cells
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
