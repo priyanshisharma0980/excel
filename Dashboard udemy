@@ -92,6 +92,7 @@ Create a tiny helper (can be hidden)
 Link it to your dropdown
 VBA re-runs Advanced Filter when dropdown changes
 
+Data - Filter - Advanced
 
 List range - select the table you added below order history
 Criteria - The L4 and L5
@@ -187,6 +188,40 @@ analyse - insert slicer
 Now if we want to hide - right click on the columns A B C D... and hide
 If you do not want to hide the chart along with the data right click on chart -
 format chart data - that sqare symbol - properties - don't move or size with cells
+
+
+
+SECURE THE DASHBOARD
+HOME (the small icon below merge and center (that small expandable)
+select the drop down
+It will open format cells wondow - Protection
+uncheck the locked for that selection
+
+Now review - protect sheet - keep password - uncheck locked cells - okay 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
