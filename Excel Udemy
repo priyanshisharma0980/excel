@@ -4,3 +4,71 @@ HOME - CONDITIONAL FORMATTING - HIGHLIGHT cell rules - Greater than
 
 If you want to remove the conditional formatting
 Conditional formatting - Manage rules
+
+CONDITIONAL FORMATTING - also used for finding duplicates
+To remove the duplicates HOME - Remove duplicates - unselect all - select Unique ID (customer ID)
+
+
+# SUBTOTALS   (This is in ribbon)
+
+TO FIND TOTAL FOR EACH GROUP
+First filter the data / sort the data in an order
+-- To find subtotal for each group
+DATA - Subtotal
+
+ANOTHER SUBTOTAL - NOT SUBTOTALS only SUBTOTAL
+
+# SUBTOTAL  (it is a function)
+It has refrence - the column
+and it has function 1-11 (includes the hidden values)
+101-111 9does not include the hidden values)
+
+SUM VS SUBTOTAL (subtotal shows sum according to the filter)
+If we choose only east region sales it wll automatically show only that value
+
+
+DATA VALIDATION WITH EXCEL
+
+Eg - If we have a table to enter 1,2,3... and want to ensure that only numerical data gets added we use data validation
+SELECT the rows then only - DATA - DATA VALIDATION - LIST - select source
+It will create a dropdown for each cell to select from (the cells that were selected)
+We can use it for decimals, whole numbers, length of words
+
+Now we want a customer error messgae if user inputs something else - 
+SELECT the rows then only - DATA - DATA Validation - ERROR Alert Tab - 
+
+
+
+PIVOT TABLE
+Once we make a pivot table and now we have sum of sales
+Now we want another column % difference of sales
+Drag sales again in the value field and click on it - value field setting - show value as - now select the appropriate
+
+DRILL Through - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
