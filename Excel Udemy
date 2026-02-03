@@ -44,7 +44,27 @@ Once we make a pivot table and now we have sum of sales
 Now we want another column % difference of sales
 Drag sales again in the value field and click on it - value field setting - show value as - now select the appropriate
 
-DRILL Through - 
+PIVOT TABLE from multiple worksheets
+Create pivot table for 1 sheet
+go to that pivot table
+go to data field where you see aloo the columnw - MORE TABLES
+
+now we need add in POWER PIVOT
+select OKay
+Now go to options - add ins - in drop down select - COMM add IN - go - select microsoft power pivot for excel
+click on table - add to data model, then click on another worksheet and add to data model
+In power pivot table - Diagram view
+
+One to many relation
+PArent table (one) to child table (many)
+
+Another way - go to data view - right click on the column - manage relationship
+How to make KPI
+under this power pivot - manage - autosum dropdown - select the option - then click on KPI
+select absolute value - select colour - select icon - okay
+KPI is created - close power pivot
+expand the columns you will seee the KPI
+
 
 
 
