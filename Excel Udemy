@@ -67,6 +67,120 @@ expand the columns you will seee the KPI
 
 
 
+### IF
+Give absolute refrence inside if (like name cell L2 = goal)
+=IF(F5>=goal,"Yes","No")
+
+we want to calculate BONUS (if all 4 weeks is above 8000 and goal reached yes)
+NESTED If
+=IF(AND(H5= "Yes",MIN(B5:F5)>=8000) = TRUE,"BONUS","NO BONUS")
+
+
+# COUNTIF
+If we want to count number of yes - countif & countifs
+=COUNTIF(H5:H9, "Yes")
+
+# SUMIF
+=SUMIF(B3:B272,G3,E3:E272)
+
+# IFERROR
+=IFERROR(VLOOKUP($B12,'Master Emp List'!$A$1:$I$38,3,FALSE),"EMP NOYT FOUND")
+
+
+
+# VLOOKUP
+
+1. select the column from your table for which you are looking for data
+2. Select the table (from where you want other related data)
+3. count the column
+4. Optional True False
+
+DRAWBACK - the 1. (select the column from your table for which you are looking for data) 
+this column should be 1st column in lookup refrence table
+It is slow
+
+Same for HLOOKUP - it is horizontal of VLOOKUP
+
+
+# INDEX and MATCH
+Alternate to VLOOKUP
+Faster
+
+=INDEX('INDEX MATCH Master Emp List'!A1:I38,10,3)
+1. Table refrence
+2. row of that refrence table
+3. column of that refrence table
+
+MATCH - it will take some values (data you are lookinf for) and give back it's position
+1. select your value you want output of from your table
+2. In refrence table sleect the refrence column
+3. 0,1,-1
+
+
+
+
+
+# TEXT BASED OPERATIONS
+LEFT, RIGHT, MID
+LUXSKY - RIGHT(sleect the LUXSKY cell, 3) - It will return LUX
+
+# LEN()
+checks number of character in a cell
+
+
+# SEARCH()
+For first name
+=LEFT(A2,SEARCH(" ",A2))
+If whole name is A2 , we are searching left from space Patrick harry - so it will give left of Space
+
+for last name
+=RIGHT(A2,LEN(A2) - SEARCH(" ",A2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
