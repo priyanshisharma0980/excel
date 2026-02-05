@@ -138,6 +138,26 @@ for last name
 
 
 
+# 365 functions
+
+1 filter - 
+1. select table
+2. select column from that table
+filter(table1, country_column=France)   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
