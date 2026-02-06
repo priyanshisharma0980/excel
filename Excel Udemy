@@ -146,6 +146,50 @@ for last name
 filter(table1, country_column=France)   
 
 
+# AUDITING
+click on any cell you want to know for - FORMULA - Trace precedents
+
+If you want a watch window - a seperate sheet
+Like a cell that has total of all sales and only that in that sheet so we can keep tab if there is any change in the value
+FORMULA - Watch window - Add watch - select that cell (from the new worksheet)
+A new small wondow will be created which will move along
+
+
+
+# PROTECTING CELLS IN EXCEL
+We need to protect the cells (if we go to Review - Protect sheet whole sheet will be unchangeable)
+We go to - HOMW (alignment area and go to that small arrow in bottom to expand it
+then Protection - 
+
+
+TO ADD PASSWORD
+FILE - INFO - Protect workbook - encrypt workbook
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
