@@ -166,6 +166,12 @@ TO ADD PASSWORD
 FILE - INFO - Protect workbook - encrypt workbook
 
 
+GOAL SEEK
+DATA - What if analysis - goal seek
+choose the cell you want to update based on cell in which changes can be made
+
+SOLVER ADD IN
+
 
 
 
