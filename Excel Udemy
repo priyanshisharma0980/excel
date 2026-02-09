@@ -175,9 +175,15 @@ SOLVER ADD IN
 
 
 
+# MACROS
+Go to developer tab (or view tab) (right click on ribbon and customise ribbon)
+Record macro
+alt+ F11 (VBA window)
+Create a button for MACRO- 
+Developer tab - Insert - click on empty spcae  - draw the MAcro button
 
-
-
+Now MACRO BUTTON is worksheet specific
+If you want it to run on multiple worksheets assign the macro to Quick access toolbar
 
 
 
