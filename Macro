@@ -1,0 +1,177 @@
+# MACROS
+Go to developer tab (or view tab) (right click on ribbon and customise ribbon)
+Record macro
+alt+ F11 (VBA window)
+Create a button for MACRO- 
+Developer tab - Insert - click on empty spcae  - draw the MAcro button
+
+Now MACRO BUTTON is worksheet specific
+If you want it to run on multiple worksheets assign the macro to Quick access toolbar
+
+
+# VBA
+In new workbook (blank)
+Open VBA window - View - Immediate Window - type  ?ActiveWorkbook.Name (it will give name of the workbook you have opened)
+
+Activesheet.range("A2").value = "Hello"
+
+
+
+VBA
+Now If you want to create a VBA
+create module - Create Procedure - sub - name the procedure
+write -
+Public Sub FunWithVBAProcedures()
+    ActiveSheet.Range("A1").Value = "Welcome"
+    MsgBox ("Hello World")
+End Sub
+click on RUN
+
+# VARIABLES in VBA
+every variable starts with Dim
+
+Dim 
+
+Public Sub FunwithVariables()
+    ' Add variables
+    Dim UserName As String
+    Dim age As Integer
+    
+    UserName = "Ashish"
+    age = 32
+    MsgBox ("Hello " & UserName & " Your age is " & age)
+End Sub
+
+
+# LOOPS in VBA
+If ActiveCell.Value >= 21 Then
+    MsgBox ("Of AGE")
+ElseIf ActiveCell.Value = 18 Then
+    MsgBox ("18")
+Else
+    MsgBox ("underage")
+End If
+
+
+
+SELECT in VBA
+Public Sub funwithSelect()
+    Select Case ActiveCell.Value
+        Case Is > 90
+        MsgBox ("above 90")
+        Case 21 To 89
+        MsgBox ("21 to 89")
+        Case Else
+        MsgBox ("under 21")
+    End Select
+End Sub
+
+
+# LOOP through rows/columns in VBA
+Public Sub FunwithLoops()
+Dim i As Integer
+i = 1
+Do While i <= 10
+    ifModule
+    ActiveCell.Offset(1, 0).Select     -- offset(rows,columns) this is a method  
+    i = i + 1
+Loop
+End Sub
+
+Offset property is used with a Range object to refer to a cell or range of cells that is a specified number of rows and columns away from a starting point. 
+
+
+
+# FOR EACH loop in VBA
+select the column
+Public Sub ForLoop()
+    Dim user As Range
+    For Each user In Selection
+    ifModule
+    ActiveCell.Offset(1, 0).Select
+Next user
+End Sub
+
+# SORT
+Public Sub DivisionSort()
+    Columns("A:F").Sort key1:=Range("A2"), order1:=xlDescending, Header:=xlYes
+    
+End Sub
+
+
+
+# USER INPUT in VBA
+Public Sub funwithInputBox()
+    Dim userInput As String
+    userInput = InputBox("What is your Favourite color?", "Favourite color")
+End Sub
+
+
+
+
+vbcrlf & _  - used to wrap text of existing and then enters new test in next line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
