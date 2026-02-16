@@ -113,6 +113,40 @@ vbcrlf & _  - used to wrap text of existing and then enters new test in next lin
 
 
 
+# I want to AUTOMATE the sum (all columns have different range)
+
+Public Sub automate_sum()
+    Dim ws As Worksheet
+    Dim lastcell As String
+    For Each ws In Worksheets
+        Worksheets(ws.Name).Select
+        Range("F2").Select
+        Selection.End(xlDown).Select
+        lastcell = ActiveCell.Address(False, False)
+        ActiveCell.Offset(1, 0).Select
+        ActiveCell.Value = "=sum(F2: " & lastcell & ")"
+    Next ws
+End Sub
+
+
+
+
+
+# USER FoRMS
+in VBA window- 
+insert - userform
+click and drop and edit
+
+now to link the form
+double click it
+the procedure window will open up
+(from drop down of 2 options that select initialize instead of click)
+
+
+
+
+
+
 
 
 
