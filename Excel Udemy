@@ -49,9 +49,10 @@ Create pivot table for 1 sheet
 go to that pivot table
 go to data field where you see aloo the columnw - MORE TABLES
 
+#POWER PIVOT
 now we need add in POWER PIVOT
 select OKay
-Now go to options - add ins - in drop down select - COMM add IN - go - select microsoft power pivot for excel
+Now go to options - add ins - in drop down select - COMM add IN - go - select microsoft power pivot for excel from RIBBON
 click on table - add to data model, then click on another worksheet and add to data model
 In power pivot table - Diagram view
 
