@@ -3,6 +3,13 @@
 ### Absolute cell refrence and Relative cell refrence
 Absolute - remains frixed when copied to other cells ($)
 
+### Wild card
+Pro* - all the words starting from pro
+Pro? - only 1 chaharcter eg- prod
+Pro~ searchs for * or ? eg - pro*
+
+EG- =Countif(column, "pro*")
+
 ###  =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
 
 ### vlookup on ALL column in 1 go - 
@@ -193,13 +200,24 @@ Public Sub automate_sum()
 End Sub
 
 
+### Mwerge 2 columns without CONCAT
+=textjoin(" ",True, A1, B1,c1)
+=textjoin(delimiter, skip empty cell, columns)
+
+### Split column first nad last name
+data - convert text to column - delimited - select delimiter - text - destinaton row - click on sheet - okay
+
+### text functions
+Ms excel errors
+Sorting filtering
 
 
+### calculated columns are computed row-by-row during data refresh, stored in memory, and used for slicing/filtering. Measures are calculated dynamically at query time (runtime), responding to visual filters and slicers, and are more efficient for large datasets.
 
 
-
-
-
+### IMPLICIT and EXPLICIT Measure
+Implicit measures in Power BI are automatically - Eg when numerical columns alredy summition
+created when dragging numeric fields into visuals, allowing for quick, simple, and non-reusable calculations. Explicit measures are manually defined by users using DAX (Data Analysis Expressions), offering full control, complex logic, reusability, and consistency across reports.
 
 
 
